@@ -2,11 +2,11 @@ import { Component, OnInit, signal } from '@angular/core';
 import { PostService } from '../../services/post.service';
 import { Post } from '../../models/post';
 import { FormsModule } from '@angular/forms';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   template: `
     <div class="home">
       <h1>Welcome to the Home Page!</h1>

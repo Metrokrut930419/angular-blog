@@ -9,14 +9,12 @@ export const routes: Routes = [
     path: 'blog',
     loadComponent: () => import('./components/blog-list/blog-list.component').then(m => m.BlogListComponent)
   },
+  
   {
     path: 'blog/:id',
     loadComponent: () => import('./components/blog-post/blog-post.component').then(m => m.BlogPostComponent)
   },
-  {
-    path: 'about',
-    loadComponent: () => import('./components/about/about.component').then(m => m.AboutComponent)
-  },
+  
   
   {
     path: '**',

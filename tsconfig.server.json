@@ -2,7 +2,7 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
       "outDir": "./dist/out-tsc-server",
-      "target": "es2016",
+      "target": "ES2022",
       "module": "commonjs",
       "types": ["node"]
     },
